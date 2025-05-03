@@ -7,6 +7,15 @@ export default defineConfig(({ mode }) => ({
   base: '/portfolio/',
   build: {
     target: ['es2020'],
+    assetsDir: 'assets',
+    outDir: 'dist/client',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
+      }
+    }
   },
   resolve: {
     mainFields: ['module'],
