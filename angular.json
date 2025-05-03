@@ -16,7 +16,8 @@
             "main": "src/main.ts",
             "outputPath": "dist/client",
             "tsConfig": "tsconfig.app.json",
-            "baseHref": "/portfolio/"
+            "baseHref": "/portfolio/",
+            "ssr": false
           },
           "defaultConfiguration": "production",
           "configurations": {

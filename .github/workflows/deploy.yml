@@ -38,6 +38,7 @@ jobs:
         run: pnpm run build
         env:
           NODE_ENV: production
+          ANALOG_SSR: false
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     analog({
       static: true,
+      ssr: false,
       vite: { experimental: { supportAnalogFormat: true } },
       prerender: {
         routes: ['/', '/about'],
